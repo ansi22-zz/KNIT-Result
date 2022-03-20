@@ -1,0 +1,25 @@
+.footer {
+  color: #fefefe;
+  background: #1b1b1b;
+ 
+}
+
+.footCont {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .footCont {
+    flex-direction: column-reverse;
+  }
+
+  .copyrightText {
+    font-size: 14px;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(120, 120, 120, 0.7);
+  }
+}
