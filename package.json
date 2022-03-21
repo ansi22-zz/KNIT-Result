@@ -2,7 +2,7 @@
   "name": "knit-result",
   "version": "0.1.0",
   "private": true,
-  "proxy":"https://knitresult.herokuapp.com",
+  "proxy": "https://knitresult.herokuapp.com",
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
@@ -17,6 +17,7 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
     "fontawesome": "^5.6.3",
     "fusioncharts": "^3.18.0",
     "react": "^17.0.2",

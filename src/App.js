@@ -4,7 +4,7 @@ import Chart from "./components/Charts/chart";
 import useStyles from "./style";
 import Per from "./components/Charts/Percentage";
 import Footer from "./components/Footer/Footer";
-
+import axios from "axios";
 function App() {
   const classes = useStyles();
 
@@ -16,13 +16,15 @@ function App() {
     if (rollno === "") {
     } else {
       const fetch_api = async () => {
-        const url = `/cache?roll=${rollno}`;
-        const response = await fetch(url);
-        console.log(response);
-        const resp = await response.json();
-        const resp1 = JSON.stringify(resp);
-        console.log(resp);
-        setValue(resp);
+        axios
+          .get(`/cache?roll=${rollno}`, {
+            headers: { "Access-Control-Allow-Origin": "*" },
+          })
+          .then((res) => {
+            const resp = res.data;
+            console.log(resp);
+            setValue(resp);
+          });
       };
       fetch_api();
     }
@@ -85,7 +87,7 @@ function App() {
         </>
       ) : (
         <>
-          {value["message"] != undefined ? (
+          {value["message"] != undefined || value[0] == null ? (
             <>
               <Grid
                 container
