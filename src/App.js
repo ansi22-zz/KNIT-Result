@@ -17,7 +17,6 @@ function App() {
     if (rollno === "") {
     } else {
       const fetch_api = async () => {
-        // "proxy": "https://knitresult.herokuapp.com",
         axios
           .get(`/api/cache?roll=${rollno}`, {
             headers: {
