@@ -33,7 +33,7 @@ function Chart(props) {
       }
     }
   }
-  console.log(b[3]);
+
   const chartData = [
     {
       label: a[0],
