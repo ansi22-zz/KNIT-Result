@@ -19,7 +19,7 @@ function App() {
       const fetch_api = async () => {
         // "proxy": "https://knitresult.herokuapp.com",
         axios
-          .get(`/cache?roll=${rollno}`, {
+          .get(`/api/cache?roll=${rollno}`, {
             headers: {
               "Access-Control-Allow-Origin": "*",
               "Content-type": "application/json; charset=UTF-8",
