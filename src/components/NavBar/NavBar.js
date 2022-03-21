@@ -22,7 +22,7 @@ export default function ButtonAppBar() {
             sx={{ flexGrow: 1 }}
             style={{
               fontFamily: "Poppins",
-              fontSize: "1.034rem",
+              fontSize: "1.03rem",
             }}
           >
             &nbsp;&nbsp; Kamla Nehru Institute of Technology

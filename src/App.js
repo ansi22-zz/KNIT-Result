@@ -5,6 +5,7 @@ import useStyles from "./style";
 import Per from "./components/Charts/Percentage";
 import Footer from "./components/Footer/Footer";
 import axios from "axios";
+
 function App() {
   const classes = useStyles();
 
@@ -16,6 +17,7 @@ function App() {
     if (rollno === "") {
     } else {
       const fetch_api = async () => {
+        // "proxy": "https://knitresult.herokuapp.com",
         axios
           .get(`/cache?roll=${rollno}`, {
             headers: {
@@ -44,7 +46,7 @@ function App() {
         alignItems="center"
         justifyContent="center"
       >
-        <Paper className={classes.input} paper elevation={4}>
+        <Paper className={classes.input} elevation={4}>
           <Typography
             className={classes.input_div1}
             variant="h6"
@@ -208,7 +210,7 @@ function App() {
                         <hr />
                       </div>
                       {value.map((val) => (
-                        <>
+                        <div key={val["name"]}>
                           <Typography
                             className={classes.typography_142}
                             style={{
@@ -249,7 +251,7 @@ function App() {
                           <div className={classes.hr}>
                             <hr />
                           </div>
-                        </>
+                        </div>
                       ))}
                     </Paper>
 

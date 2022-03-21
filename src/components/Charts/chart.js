@@ -1,8 +1,9 @@
+/* eslint-disable */
 import React from "react";
 import ReactFC from "react-fusioncharts";
 import FusionCharts from "fusioncharts";
 import Charts from "fusioncharts/fusioncharts.charts";
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
 
 function Chart(props) {
@@ -32,7 +33,7 @@ function Chart(props) {
       }
     }
   }
-  // console.log(b[3]);
+  console.log(b[3]);
   const chartData = [
     {
       label: a[0],
@@ -51,6 +52,7 @@ function Chart(props) {
       value: b[3],
     },
   ];
+
   const chartConfigs = {
     type: "column3d",
     width: "100%",

@@ -1,8 +1,10 @@
-import React from "react";
-import ReactFC from "react-fusioncharts";
+/* eslint-disable */
+import React, { Component } from "react";
 import FusionCharts from "fusioncharts";
 import Charts from "fusioncharts/fusioncharts.charts";
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import ReactFC from "react-fusioncharts";
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.candy";
+
 ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
 
 function Per(props) {
@@ -32,7 +34,7 @@ function Per(props) {
       chart: {
         caption: "Cumulative Percentage Plot ",
         yAxisName: "Percentage",
-        theme: "carbon",
+        theme: "fusion",
       },
       data: chartData,
     },
