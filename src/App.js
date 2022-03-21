@@ -18,13 +18,17 @@ function App() {
       const fetch_api = async () => {
         axios
           .get(`/cache?roll=${rollno}`, {
-            headers: { "Access-Control-Allow-Origin": "*" },
+            headers: {
+              "Access-Control-Allow-Origin": "*",
+              "Content-type": "application/json; charset=UTF-8",
+            },
           })
           .then((res) => {
             const resp = res.data;
             console.log(resp);
             setValue(resp);
-          });
+          })
+          .catch((error) => console.log(error));
       };
       fetch_api();
     }
@@ -87,7 +91,7 @@ function App() {
         </>
       ) : (
         <>
-          {value["message"] != undefined || value[0] == null ? (
+          {value["message"] !== undefined || value[0] == null ? (
             <>
               <Grid
                 container

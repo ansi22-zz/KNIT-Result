@@ -19,13 +19,12 @@ export default function ButtonAppBar() {
             }}
           />
           <Typography
-            // className="input"
-            variant="h6"
-            component="div"
             sx={{ flexGrow: 1 }}
-            style={{ fontFamily: "Poppins" }}
+            style={{
+              fontFamily: "Poppins",
+              fontSize: "1.034rem",
+            }}
           >
-            {/* <span> */}
             &nbsp;&nbsp; Kamla Nehru Institute of Technology
           </Typography>
         </Toolbar>

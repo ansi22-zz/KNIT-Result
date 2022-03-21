@@ -80,42 +80,55 @@ export default makeStyles((theme) => ({
     marginLeft: "10px",
     marginTop: "10px",
   },
-  ["@media only screen and (max-width: 780px)"]: {
+  ["@media only screen and (max-width: 400px)"]: {
     // eslint-disable-line no-useless-computed-key
     input: {
       margin: "auto",
       padding: "10px",
-      height: "120px",
-      width: "420px",
+      height: "110px",
+      width: "350px",
+    },
+    textfield: {
+      marginLeft: "30px",
+      padding: "4px",
+      height: "15px",
+      width: "170px",
+    },
+    button: {
+      marginLeft: "10px",
+      marginTop: "6px",
+      width: "100px",
     },
     input_div1: {
-      marginLeft: "78px",
+      marginLeft: "55px",
+      fontSize: "1.15rem",
     },
     paper_109: {
-      width: "450px",
+      width: "380px",
       marginTop: "30px",
     },
     div84: {
       flexDirection: "column",
     },
     paper_118: {
-      width: "450px",
+      width: "380px",
     },
     paper_296: {
-      width: "450px",
+      width: "380px",
       marginTop: "40px",
       marginLeft: "0px",
     },
     hr: {
-      width: "430px",
+      width: "360px",
       marginLeft: "10px",
       marginTop: "10px",
     },
     typography_223: {
-      marginLeft: "156px",
+      marginLeft: "120px",
     },
     typography_124: {
-      marginLeft: "127px",
+      marginLeft: "90px",
+      fontSize: "1.5rem",
     },
   },
 }));
