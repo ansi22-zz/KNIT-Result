@@ -80,7 +80,7 @@ export default makeStyles((theme) => ({
     marginLeft: "10px",
     marginTop: "10px",
   },
-  ["@media only screen and (max-width: 400px)"]: {
+  ["@media only screen and (max-width: 650px)"]: {
     // eslint-disable-line no-useless-computed-key
     input: {
       margin: "auto",
