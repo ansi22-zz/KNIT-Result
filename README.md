@@ -9,7 +9,7 @@ KNIT-Result-API code for the same can be found <a href = "https://github.com/ans
 - Clone the repository **'KNIT-Result'** by clicking on the Clone button `https://github.com/ansi22/KNIT-Result.git`. Alternatively, download the repository.
 - Navigate to the folder `$ cd KNIT-Result`
 - Install all the required dependencies `$ npm i`
-- Find following code at `App.js` file:
+- Find following code in `App.js` file:
  ```jsx
 const fetch_api = async () => {
         axios
@@ -35,7 +35,7 @@ const fetch_api = async () => {
 - Inside your browser, navigate to the link `localhost:3000`
 
 ## Learning-Point
-- Proxy-server works fine for the local development only.
+- Proxy-server works fine in the local development only.
 - Refer to <a href = "https://create-react-app.dev/docs/proxying-api-requests-in-development/#invalid-host-header-errors-after-configuring-proxy">react docs</a> or 
 <a href = "https://docs.netlify.com/routing/redirects/rewrites-proxies/">netlify docs</a> incase of
   Proxying API Requests in Development mode.
