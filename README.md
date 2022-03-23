@@ -9,7 +9,7 @@ KNIT-Result-API code for the same can be found <a href = "https://github.com/ans
 - Clone the repository **'KNIT-Result'** by clicking on the Clone button `https://github.com/ansi22/KNIT-Result.git`. Alternatively, download the repository.
 - Navigate to the folder `$ cd KNIT-Result`
 - Install all the required dependencies `$ npm i`
-- Find following code in `App.js` file:
+- Find following code in `App.js` file in root directory:
  ```jsx
 const fetch_api = async () => {
         axios
