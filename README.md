@@ -39,3 +39,4 @@ const fetch_api = async () => {
 - Refer to <a href = "https://create-react-app.dev/docs/proxying-api-requests-in-development/#invalid-host-header-errors-after-configuring-proxy">react docs</a> or 
 <a href = "https://docs.netlify.com/routing/redirects/rewrites-proxies/">netlify docs</a> incase of
   Proxying API Requests in Development mode.
+<hr/>
