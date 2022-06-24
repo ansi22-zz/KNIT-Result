@@ -2,7 +2,7 @@
 
 ## Objective:
 This project aims to provide year-wise & cumulative result stats to the students of Kamla Nehru Institute Of Technology, by using the 
-KNIT-Result-API code for the same can be found <a href = "https://github.com/ansi22/KNIT-Result-API">here</a>.
+KNIT-Result-API code for the same can be found <a href = "https://github.com/ansi22/KNIT-Result-API">here</a> (API Credits: <a href = "https://github.com/karandeep09">karandeep09</a> )
 
 ## Quick-Setup
 
