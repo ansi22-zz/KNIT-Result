@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 module.exports = function (app) {
   app.use(
     createProxyMiddleware({
-      target: "https://knitresult.herokuapp.com",
+      target: "https://knit-result.onrender.com",
       changeOrigin: true,
     })
   );
